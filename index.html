@@ -245,7 +245,7 @@
     .metric-num {
       font-family: 'Noto Serif TC', serif;
       font-size: 1.5rem; font-weight: 700; color: var(--accent);
-      min-width: 80px;
+      min-width: 80px; flex-shrink: 0;
     }
     .metric-desc { font-size: 0.82rem; color: var(--muted); line-height: 1.4; }
     .case-footer {
@@ -385,6 +385,13 @@
       .form-row { grid-template-columns: 1fr; }
       .method-grid { grid-template-columns: 1fr; }
       .method-step { border-right: none; border-bottom: 1px solid var(--border); }
+      /* Why SEO section - 手機版單欄 */
+      #why .pain-grid { grid-template-columns: 1fr !important; }
+      #why .synergy-grid { grid-template-columns: 1fr !important; }
+      #why .synergy-arrow { display: none !important; }
+      #why { padding: 4rem 5% !important; }
+      /* Cases - 手機版單欄 */
+      .cases-grid { grid-template-columns: 1fr !important; }
     }
   </style>
 </head>
@@ -448,7 +455,7 @@
   <h2 style="color:var(--paper);margin-bottom:0.8rem;">您是否也遇到這些困境？</h2>
   <p class="section-sub" style="color:rgba(245,240,232,0.55);margin-bottom:3rem;">許多品牌每月花大量預算在廣告，卻發現流量一停就消失。SEO 是讓品牌被持續找到的長期資產。</p>
 
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:4rem;">
+  <div class="pain-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-bottom:4rem;">
     <div style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:4px;padding:2rem;">
       <div style="font-size:2rem;margin-bottom:1rem;">💸</div>
       <div style="font-weight:700;font-size:1rem;color:var(--paper);margin-bottom:0.5rem;">高曝光成本</div>
@@ -471,7 +478,7 @@
     <div style="font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--accent-light);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:1rem;">SEO 的延伸價值</div>
     <div style="font-family:'Noto Serif TC',serif;font-size:1.4rem;font-weight:700;color:var(--paper);margin-bottom:0.6rem;">懂廣告邏輯的 SEO，讓你的行銷預算更有效率</div>
     <div style="font-size:0.88rem;color:rgba(245,240,232,0.5);line-height:1.7;margin-bottom:1.8rem;">具備跨渠道行銷視野，SEO 策略天生就能與廣告投放相輔相成，讓每一分行銷預算發揮最大效益。</div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
+    <div class="synergy-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;">
       <div style="background:rgba(255,255,255,0.05);border-radius:4px;padding:1.4rem;">
         <div style="font-size:1.3rem;margin-bottom:0.7rem;">📝</div>
         <div style="font-weight:700;color:var(--paper);font-size:0.88rem;margin-bottom:0.4rem;">SEO 內容優化廣告品質</div>
@@ -782,7 +789,8 @@
         </div>
         <div class="contact-item">
           <div class="contact-icon">✉️</div>
-          <div class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0f6e3e36363e36394f68626e6663216c6062">[email&#160;protected]</a></div>
+          <div class="contact-value" id="contact-email">a199196<!-- no -->@<!-- no -->gmail.com</div>
+          <script>document.getElementById('contact-email').textContent='a199196'+'@'+'gmail.com';</script>
         </div>
       </div>
     </div>
