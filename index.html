@@ -826,14 +826,32 @@
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Helen Chen</div>
-  <div>© 2025 陳宜妏 Helen Chen ｜ SEO 資深行銷顧問</div>
+  <div>© 2026 陳宜妏 Helen Chen ｜ SEO 資深行銷顧問</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  // Fade in on scroll
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(e => {
-      if (e.isIntersecting) { e.target.classList.add('visible'); }
+<script>
+  // Fade in on scroll - reliable version
+  function revealElements() {
+    document.querySelectorAll('.fade-in').forEach(el => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 40) {
+        el.classList.add('visible');
+      }
     });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-in').forEach(el =>
+  }
+
+  // Run on load and scroll
+  window.addEventListener('load', revealElements);
+  window.addEventListener('scroll', revealElements, { passive: true });
+  // Fallback: reveal all after 2s
+  setTimeout(() => {
+    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+  }, 2000);
+
+  // Form submit
+  document.querySelector('.form-submit').addEventListener('click', () => {
+    alert('感謝您的聯絡！Helen 將在 1-2 個工作天內回覆您。');
+  });
+</script>
+</body>
+</html>
