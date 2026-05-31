@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>常見問題 FAQ｜Helen Chen SEO 顧問</title>
+  <meta name="description" content="整理了 20 個最常被問到的 SEO 問題，從 SEO 基礎觀念、顧問服務內容、收費合作方式到 AIO/GEO，Helen 為你一一解答。" />
+  <link rel="canonical" href="https://a199196-dev.github.io/faq.html" />
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NHMLJPRX');</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"SEO 是什麼？對我的品牌有什麼幫助？","acceptedAnswer":{"@type":"Answer","text":"SEO（搜尋引擎優化）是讓你的網站在 Google 等搜尋引擎自然排名提升的策略。不同於廣告，SEO 帶來的流量是免費且持續的，能幫助品牌建立長期的搜尋引擎競爭優勢。"}},
+      {"@type":"Question","name":"SEO 需要多久才能看到效果？","acceptedAnswer":{"@type":"Answer","text":"一般來說，3 個月開始看到排名移動，6 個月有明顯流量成長，12 個月以上達到穩定成效。具體時間取決於產業競爭程度、網站基礎與執行力度。"}},
+      {"@type":"Question","name":"SEO 顧問和 SEO 公司有什麼差別？","acceptedAnswer":{"@type":"Answer","text":"SEO 公司通常提供代操服務，由團隊全權執行；SEO 顧問則著重策略規劃與陪跑指導，適合有內部團隊但缺乏 SEO 方向的企業。"}},
+      {"@type":"Question","name":"我的網站規模很小，適合找 SEO 顧問嗎？","acceptedAnswer":{"@type":"Answer","text":"適合。小型網站更需要把資源用在刀口上，顧問能幫你快速找出最有價值的優化方向，避免走彎路。"}},
+      {"@type":"Question","name":"Helen 的收費方式是什麼？","acceptedAnswer":{"@type":"Answer","text":"依專案性質提供月費顧問制或專案制兩種方案，具體費用依服務範圍、產業複雜度與執行深度而定，歡迎填寫聯絡表單討論。"}}
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --accent: #c85a2a;
+      --accent-light: #e8784a;
+      --accent-pale: #f5e8e0;
+      --paper: #f5f0e8;
+      --paper-dark: #ede8df;
+      --ink: #1a1410;
+      --ink-mid: #4a3f35;
+      --ink-light: #8a7a6e;
+      --border: #ddd5c8;
+      --white: #ffffff;
+      --serif: 'Noto Serif TC', serif;
+      --sans: 'DM Sans', sans-serif;
+      --radius: 12px;
+      --shadow: 0 2px 16px rgba(26,20,16,0.08);
+      --shadow-hover: 0 8px 32px rgba(26,20,16,0.14);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(245,240,232,0.95);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+    }
+    .nav-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .nav-logo {
+      font-family: var(--serif);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--ink);
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.9rem;
+      color: var(--ink-mid);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover, .nav-links a.active { color: var(--accent); }
+    .nav-cta {
+      background: var(--accent);
+      color: var(--white) !important;
+      padding: 0.45rem 1.2rem;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+    .nav-cta:hover { background: var(--accent-light); color: var(--white) !important; }
+
+    /* hamburger */
+    .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; border: none; background: none; padding: 4px; }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: all 0.3s; }
+    .mobile-menu { display: none; flex-direction: column; gap: 1rem; padding: 1rem 2rem 1.5rem; border-top: 1px solid var(--border); background: var(--paper); }
+    .mobile-menu a { color: var(--ink-mid); text-decoration: none; font-size: 0.95rem; }
+    .mobile-menu a:hover { color: var(--accent); }
+    .mobile-menu.open { display: flex; }
+
+    /* ── HERO ── */
+    .faq-hero {
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .faq-hero::before {
+      content: '';
+      position: absolute;
+      top: -40px; left: 50%;
+      transform: translateX(-50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(200,90,42,0.08) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .breadcrumb {
+      font-size: 0.85rem;
+      color: var(--ink-light);
+      margin-bottom: 1.2rem;
+    }
+    .breadcrumb a { color: var(--ink-light); text-decoration: none; }
+    .breadcrumb a:hover { color: var(--accent); }
+    .faq-hero h1 {
+      font-family: var(--serif);
+      font-size: clamp(2rem, 5vw, 3rem);
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 1rem;
+    }
+    .faq-hero h1 em {
+      font-style: normal;
+      color: var(--accent);
+      position: relative;
+    }
+    .faq-hero p {
+      color: var(--ink-mid);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin: 0 auto 2rem;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .hero-stat {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+    }
+    .hero-stat strong {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      color: var(--accent);
+    }
+    .hero-stat span { font-size: 0.82rem; color: var(--ink-light); }
+
+    /* ── LAYOUT ── */
+    .faq-layout {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 3rem 2rem 6rem;
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 3rem;
+      align-items: start;
+    }
+
+    /* ── SIDEBAR ── */
+    .faq-sidebar {
+      position: sticky;
+      top: 84px;
+    }
+    .sidebar-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+      padding-left: 1rem;
+    }
+    .sidebar-nav { list-style: none; }
+    .sidebar-nav li { margin-bottom: 0.25rem; }
+    .sidebar-nav a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      color: var(--ink-mid);
+      text-decoration: none;
+      transition: all 0.2s;
+      border-left: 3px solid transparent;
+    }
+    .sidebar-nav a:hover {
+      background: var(--accent-pale);
+      color: var(--accent);
+      border-left-color: var(--accent);
+    }
+    .sidebar-nav a.active {
+      background: var(--accent-pale);
+      color: var(--accent);
+      font-weight: 600;
+      border-left-color: var(--accent);
+    }
+    .sidebar-nav .cat-icon { font-size: 1rem; }
+
+    /* ── FAQ SECTIONS ── */
+    .faq-section { margin-bottom: 3.5rem; }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid var(--border);
+    }
+    .section-num {
+      width: 32px; height: 32px;
+      background: var(--accent);
+      color: var(--white);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .section-header h2 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    /* ── FAQ ITEMS ── */
+    .faq-item {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      transition: box-shadow 0.2s, border-color 0.2s;
+    }
+    .faq-item:hover {
+      box-shadow: var(--shadow);
+      border-color: #c8b8a8;
+    }
+    .faq-item.open {
+      border-color: var(--accent);
+      box-shadow: var(--shadow-hover);
+    }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      padding: 1.1rem 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      text-align: left;
+    }
+    .q-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      min-width: 28px;
+      font-family: var(--serif);
+    }
+    .q-text {
+      flex: 1;
+      font-size: 0.97rem;
+      font-weight: 500;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    .q-icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: var(--paper);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      transition: all 0.3s;
+      font-size: 1rem;
+      color: var(--ink-mid);
+    }
+    .faq-item.open .q-icon {
+      background: var(--accent);
+      color: var(--white);
+      transform: rotate(45deg);
+    }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+    }
+    .faq-a-inner {
+      padding: 0 1.4rem 1.3rem 3.4rem;
+      color: var(--ink-mid);
+      font-size: 0.93rem;
+      line-height: 1.8;
+    }
+    .faq-a-inner a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .faq-item.open .faq-a { max-height: 600px; }
+
+    /* tag chip */
+    .faq-tag {
+      display: inline-block;
+      background: var(--accent-pale);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── CTA BANNER ── */
+    .faq-cta {
+      background: linear-gradient(135deg, var(--ink) 0%, #2d2218 100%);
+      border-radius: 16px;
+      padding: 3rem;
+      text-align: center;
+      margin: 2rem 0 0;
+    }
+    .faq-cta h3 {
+      font-family: var(--serif);
+      color: var(--white);
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .faq-cta p { color: #b8a898; margin-bottom: 1.5rem; font-size: 0.95rem; }
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--white);
+      padding: 0.8rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-primary:hover {
+      background: var(--accent-light);
+      transform: translateY(-2px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--ink);
+      color: #8a7a6e;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.85rem;
+    }
+    footer a { color: #8a7a6e; text-decoration: none; }
+    footer a:hover { color: var(--accent); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      .faq-layout {
+        grid-template-columns: 1fr;
+        padding: 2rem 1.2rem 4rem;
+        gap: 2rem;
+      }
+      .faq-sidebar {
+        position: static;
+        overflow-x: auto;
+      }
+      .sidebar-nav {
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+      }
+      .sidebar-nav a {
+        border-left: none;
+        border-bottom: 2px solid transparent;
+        white-space: nowrap;
+      }
+      .sidebar-nav a.active { border-bottom-color: var(--accent); }
+      .faq-hero { padding: 3.5rem 1.2rem 2.5rem; }
+      .faq-cta { padding: 2rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- GTM noscript -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHMLJPRX" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- ── NAV ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="https://a199196-dev.github.io/" class="nav-logo">Helen Chen</a>
+    <ul class="nav-links">
+      <li><a href="https://a199196-dev.github.io/#about">關於我</a></li>
+      <li><a href="https://a199196-dev.github.io/#cases">案例</a></li>
+      <li><a href="https://a199196-dev.github.io/#services">服務</a></li>
+      <li><a href="https://a199196-dev.github.io/blog.html">部落格</a></li>
+      <li><a href="faq.html" class="active">常見問題</a></li>
+      <li><a href="https://a199196-dev.github.io/#contact" class="nav-cta">聯絡我</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="https://a199196-dev.github.io/#about">關於我</a>
+    <a href="https://a199196-dev.github.io/#cases">案例</a>
+    <a href="https://a199196-dev.github.io/#services">服務</a>
+    <a href="https://a199196-dev.github.io/blog.html">部落格</a>
+    <a href="faq.html">常見問題</a>
+    <a href="https://a199196-dev.github.io/#contact">聯絡我</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="faq-hero">
+  <p class="breadcrumb"><a href="https://a199196-dev.github.io/">首頁</a> / 常見問題</p>
+  <h1>SEO <em>常見問題</em></h1>
+  <p>整理了 20 個最常被問到的問題，從 SEO 基礎、顧問服務、收費合作，到 AIO/GEO，一次為你解答。</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>20</strong><span>個常見問題</span></div>
+    <div class="hero-stat"><strong>5</strong><span>個主題分類</span></div>
+    <div class="hero-stat"><strong>5yr</strong><span>實戰經驗回答</span></div>
+  </div>
+</section>
+
+<!-- ── MAIN LAYOUT ── -->
+<div class="faq-layout">
+
+  <!-- SIDEBAR -->
+  <aside class="faq-sidebar">
+    <p class="sidebar-label">問題分類</p>
+    <ul class="sidebar-nav" id="sidebar-nav">
+      <li><a href="#sec-basic" class="active" data-target="sec-basic"><span class="cat-icon">📖</span> SEO 基礎觀念</a></li>
+      <li><a href="#sec-consultant" data-target="sec-consultant"><span class="cat-icon">🤝</span> 關於 Helen 的服務</a></li>
+      <li><a href="#sec-pricing" data-target="sec-pricing"><span class="cat-icon">💰</span> 收費與合作</a></li>
+      <li><a href="#sec-tools" data-target="sec-tools"><span class="cat-icon">🛠️</span> SEO 工具</a></li>
+      <li><a href="#sec-geo" data-target="sec-geo"><span class="cat-icon">🤖</span> AIO / GEO</a></li>
+    </ul>
+  </aside>
+
+  <!-- FAQ CONTENT -->
+  <main>
+
+    <!-- 01 SEO 基礎觀念 -->
+    <section class="faq-section" id="sec-basic">
+      <div class="section-header">
+        <div class="section-num">01</div>
+        <h2>SEO 基礎觀念</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">01</span>
+          <span class="q-text">SEO 是什麼？對我的品牌有什麼幫助？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          SEO（搜尋引擎優化）是讓你的網站在 Google 等搜尋引擎自然排名提升的策略。不同於廣告，SEO 帶來的流量是免費且持續的，能幫助品牌建立長期的搜尋引擎競爭優勢——流量不會因為停止付費而消失。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">02</span>
+          <span class="q-text">SEO 需要多久才能看到效果？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          一般來說，3 個月開始看到排名移動，6 個月有明顯流量成長，12 個月以上達到穩定成效。具體時間取決於產業競爭程度、網站既有基礎與執行力度。以我的泰國國際 SEO 案例為例，3 個月內 50 組關鍵字有 42% 進入百名內。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">03</span>
+          <span class="q-text">SEO 跟付費廣告（SEM）有什麼不同？應該怎麼選？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          廣告是「付費買流量」，停止投放流量即消失；SEO 是「累積資產」，持續帶來自然流量。兩者並不互斥——SEO 打底後，廣告的 ROAS 往往也會提升，因為品牌信任感已建立。預算充足時可並行，預算有限時建議優先布局 SEO。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">04</span>
+          <span class="q-text">什麼是技術性 SEO？我需要懂技術才能做 SEO 嗎？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          技術性 SEO 是指讓搜尋引擎能正確爬取、解析、索引你的網站的底層設定，包含網站速度、Sitemap、Canonical、結構化資料等。身為品牌主或行銷人，你不需要自己動手，但需要理解這些問題對排名的影響，顧問會幫你找出問題點並協調技術團隊執行。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">05</span>
+          <span class="q-text">自己做 SEO 跟找 SEO 顧問有什麼差別？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          自己做 SEO 成本低，但學習曲線長、容易走彎路，且很難客觀判斷自己網站的問題。找顧問的核心價值在於「加速」與「少走冤枉路」——有系統的策略規劃、跨產業的操作經驗，可以幫你在最短時間內找到最值得優先投資的方向。
+        </div></div>
+      </div>
+    </section>
+
+    <!-- 02 關於 Helen 的服務 -->
+    <section class="faq-section" id="sec-consultant">
+      <div class="section-header">
+        <div class="section-num">02</div>
+        <h2>關於 Helen 的服務</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">06</span>
+          <span class="q-text">Helen 的 SEO 服務包含哪些項目？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          主要提供六大服務：關鍵字策略規劃、SEO 內容文案、技術性 SEO 健檢、數據分析報告（GA4 / GSC / Looker Studio）、SEO 顧問諮詢，以及整合行銷加值（社群、電商檔期、EDM 等）。可依你的需求選擇單項服務或完整顧問方案。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">07</span>
+          <span class="q-text">Helen 有服務過哪些產業？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          橫跨醫療（禾馨宜蘊）、食品電商（豆油伯）、教育（洋碩美語）、美容美髮電商、以及國際 SEO（泰國生殖中心）。不同產業的 SEO 邏輯差異很大，多元的實戰經驗讓我能更快速判斷你的產業特性與切入策略。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">08</span>
+          <span class="q-text">我的網站規模很小，適合找 SEO 顧問嗎？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          完全適合。小型網站更需要把有限資源用在刀口上，顧問能幫你快速診斷最關鍵的問題，避免花時間在低效益的優化上。很多中小企業在短期內就看到明顯成效，反而比大型網站更容易快速突破。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">09</span>
+          <span class="q-text">可以線上合作嗎？需要見面嗎？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          完全可以線上合作，也有接過跨國案件（如泰國）。定期透過 Google Meet 進行策略討論，報告與執行文件透過 Google Docs / Notion 共享，不需要實體見面也能高效推進。
+        </div></div>
+      </div>
+    </section>
+
+    <!-- 03 收費與合作 -->
+    <section class="faq-section" id="sec-pricing">
+      <div class="section-header">
+        <div class="section-num">03</div>
+        <h2>收費與合作</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">10</span>
+          <span class="q-text">Helen 的收費方式是什麼？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          依專案性質提供兩種方案：<strong>月費顧問制</strong>（適合持續性合作，提供策略陪跑與定期報告）與<strong>專案制</strong>（適合一次性健檢、關鍵字策略或特定優化目標）。費用依服務範圍與產業複雜度而定，歡迎先填寫<a href="https://a199196-dev.github.io/#contact">聯絡表單</a>討論需求。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">11</span>
+          <span class="q-text">合作流程是什麼？如何開始？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          流程很簡單：① 填寫聯絡表單說明需求 → ② 安排初次諮詢（約 30 分鐘）→ ③ 提供客製提案與報價 → ④ 確認合作後正式啟動。初次諮詢不收費，讓雙方先確認合適再進行。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">12</span>
+          <span class="q-text">合約裡會有哪些重要條款需要注意？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          合作合約通常會明確列出：服務範圍與交付物清單、每月里程碑、報告頻率與格式、保密條款，以及終止合約的提前告知期。我不提供「排名保證」的服務，因為 Google 演算法無法被預測，但我會提供透明的成效追蹤讓你隨時掌握進度。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">13</span>
+          <span class="q-text">SEO 顧問的預算大概要抓多少？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          台灣市場顧問型 SEO 服務月費通常落在 NT$15,000–60,000 之間，依服務深度而定。建議先釐清你的核心需求（純策略、還是需要內容產出？），再對照服務範圍決定預算區間。若預算有限，可考慮先做一次性的 SEO 健檢與策略規劃，再由內部團隊執行。
+        </div></div>
+      </div>
+    </section>
+
+    <!-- 04 SEO 工具 -->
+    <section class="faq-section" id="sec-tools">
+      <div class="section-header">
+        <div class="section-num">04</div>
+        <h2>SEO 工具</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">14</span>
+          <span class="q-text">新手做 SEO 需要哪些工具？有免費的選擇嗎？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          從免費工具開始就夠了：<strong>Google Search Console</strong>（監控排名、索引、點擊）、<strong>Google Analytics 4</strong>（追蹤流量行為）、<strong>Google Keyword Planner</strong>（關鍵字研究）。進階後可評估付費工具如 Ahrefs 或 Screaming Frog，但初期不需要急著付費。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">15</span>
+          <span class="q-text">Ahrefs 和 Semrush 哪個比較好用？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          兩者各有強項。Ahrefs 在反向連結分析和關鍵字資料庫上表現優秀，介面直觀；Semrush 的競品分析和技術健檢功能更全面。我個人日常使用 Ahrefs 做關鍵字研究與競品追蹤。如果只能選一個，推薦 Ahrefs 入門；預算允許則可同時訂閱。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">16</span>
+          <span class="q-text">Google Search Console 最重要的功能是什麼？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          GSC 是 SEO 必備的免費工具，最重要的三個功能是：① <strong>成效報告</strong>——看哪些關鍵字帶來曝光和點擊；② <strong>網頁索引</strong>——確認 Google 有沒有收錄你的頁面；③ <strong>網址審查</strong>——手動要求 Google 爬取特定頁面。建議每週至少查看一次。
+        </div></div>
+      </div>
+    </section>
+
+    <!-- 05 AIO / GEO -->
+    <section class="faq-section" id="sec-geo">
+      <div class="section-header">
+        <div class="section-num">05</div>
+        <h2>AIO / GEO</h2>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">17</span>
+          <span class="q-text">什麼是 GEO？和 SEO 有什麼不同？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          GEO（生成式引擎優化）是讓你的品牌內容被 ChatGPT、Perplexity、Google AI Overview 等 AI 搜尋引用的策略。SEO 的目標是 Google 排名，GEO 的目標是讓 AI 主動推薦你的品牌。兩者邏輯有重疊（都需要高品質內容），但 GEO 更強調結構化、權威性與品牌一致性。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">18</span>
+          <span class="q-text">AI 搜尋興起後，SEO 還有用嗎？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          SEO 不會消失，但需要進化。目前 Google 搜尋仍是流量主要來源，且 AI Overview 的引用來源本身就是高排名的網頁。換句話說，做好 SEO 就是做好 GEO 的基礎。建議不要拋棄 SEO，而是在既有基礎上疊加 GEO 思維。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">19</span>
+          <span class="q-text">怎麼知道我的品牌有沒有被 AI 引用？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          可以直接到 ChatGPT、Perplexity、Google AI Overview 搜尋與你品牌相關的問題，看看 AI 的回答是否提到你。也可以監控品牌名稱的提及次數。如果 AI 從未提到你的品牌，代表你的內容權威性或結構化程度還有提升空間。
+        </div></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">
+          <span class="q-num">20</span>
+          <span class="q-text">如何讓 ChatGPT 或 Perplexity 主動推薦我的品牌？</span>
+          <span class="q-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">
+          核心策略有三個：① <strong>建立外部引用</strong>——讓媒體、部落格、論壇提到你的品牌，增加 AI 訓練資料中的曝光；② <strong>結構化內容</strong>——FAQ、定義清晰的說明文、數據佐證的文章，AI 更容易引用；③ <strong>E-E-A-T 強化</strong>——展現你的專業經驗、客觀案例與可信度，讓 AI 判定你是可引用的權威來源。
+        </div></div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="faq-cta">
+      <h3>還有其他問題？</h3>
+      <p>每個品牌的 SEO 狀況都不同，歡迎直接聯絡我，我們一起找到最適合你的策略方向。</p>
+      <a href="https://a199196-dev.github.io/#contact" class="btn-primary">預約免費諮詢 →</a>
+    </div>
+
+  </main>
+</div>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <p>© 2025 陳宜妏 Helen Chen｜SEO 資深行銷顧問 ｜ <a href="https://a199196-dev.github.io/">回到首頁</a></p>
+</footer>
+
+<script>
+  // hamburger
+  const btn = document.getElementById('hamburger');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => menu.classList.toggle('open'));
+
+  // accordion
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      // close all
+      document.querySelectorAll('.faq-item.open').forEach(i => {
+        i.classList.remove('open');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        q.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+
+  // sidebar active on scroll
+  const sections = document.querySelectorAll('.faq-section');
+  const navLinks = document.querySelectorAll('.sidebar-nav a');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(a => a.classList.remove('active'));
+        const active = document.querySelector(`.sidebar-nav a[data-target="${entry.target.id}"]`);
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-30% 0px -60% 0px' });
+  sections.forEach(s => observer.observe(s));
+</script>
+</body>
+</html>
