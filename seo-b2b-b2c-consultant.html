@@ -90,6 +90,12 @@
     .callout-warning { background: #fef9ec; border-left: 4px solid #d4a017; color: var(--ink-mid); }
     .callout-title { font-weight: 700; font-size: 0.82rem; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 0.5rem; }
 
+    /* NEW: observation callout variant */
+    .callout-observation { background: #f0f4f0; border-left: 4px solid #5a7a5a; color: var(--ink-mid); }
+    .callout-observation strong { color: #3d5c3d; }
+    .callout-observation .callout-title { color: #3d5c3d; }
+    .callout-observation .obs-label { display: inline-block; background: #3d5c3d; color: #fff; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; padding: 0.15rem 0.5rem; border-radius: 3px; margin-bottom: 0.75rem; }
+
     .table-wrap { overflow-x: auto; margin: 1.75rem 0; border-radius: var(--radius); border: 1px solid var(--border); }
     table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
     thead { background: var(--ink); color: var(--white); }
@@ -100,27 +106,23 @@
     tbody td { padding: 0.85rem 1.1rem; color: var(--ink-mid); }
     tbody td:first-child { font-weight: 500; color: var(--ink); }
 
-    /* ABILITY CARDS */
     .ability-list { margin: 1.5rem 0; display: flex; flex-direction: column; gap: 1rem; }
     .ability-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.4rem 1.6rem; display: flex; gap: 1.2rem; align-items: flex-start; }
     .ability-num { font-family: var(--serif); font-size: 1.4rem; font-weight: 700; color: var(--accent); min-width: 32px; line-height: 1.3; }
     .ability-content h3 { font-family: var(--serif); font-weight: 700; font-size: 1rem; color: var(--ink); margin-bottom: 0.5rem; margin-top: 0; }
     .ability-content p { font-size: 0.9rem; color: var(--ink-mid); line-height: 1.8; margin: 0; }
 
-    /* SCENARIO CARDS */
     .scenario-list { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
     .scenario-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.25rem 1.5rem; border-left: 4px solid var(--accent); }
     .scenario-label { font-size: 0.75rem; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
     .scenario-card h3 { font-family: var(--serif); font-weight: 700; font-size: 0.97rem; color: var(--ink); margin-bottom: 0.4rem; }
     .scenario-card p { font-size: 0.88rem; color: var(--ink-mid); line-height: 1.8; margin: 0; }
 
-    /* CHECKLIST */
     .checklist { list-style: none; margin: 1rem 0 1.5rem; }
     .checklist li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.75rem 0; border-bottom: 1px solid var(--border); font-size: 0.93rem; color: var(--ink-mid); }
     .checklist li:last-child { border-bottom: none; }
     .checklist li::before { content: 'Q'; background: var(--accent); color: var(--white); font-weight: 700; font-size: 0.72rem; width: 20px; height: 20px; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 0.1rem; }
 
-    /* FUNNEL */
     .funnel { margin: 1.5rem 0; display: flex; flex-direction: column; gap: 0.5rem; }
     .funnel-item { border-radius: 8px; padding: 1rem 1.4rem; display: flex; align-items: center; gap: 1rem; }
     .funnel-item:nth-child(1) { background: rgba(200,90,42,0.12); }
@@ -129,6 +131,17 @@
     .funnel-stage { font-size: 0.72rem; font-weight: 700; color: var(--accent); letter-spacing: 0.08em; text-transform: uppercase; min-width: 60px; }
     .funnel-content h4 { font-family: var(--serif); font-weight: 700; font-size: 0.9rem; color: var(--ink); margin-bottom: 0.2rem; }
     .funnel-content p { font-size: 0.83rem; color: var(--ink-mid); margin: 0; }
+
+    /* NEW: comparison row for GEO section */
+    .geo-compare { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin: 1.25rem 0; }
+    .geo-col { border-radius: 8px; padding: 1rem 1.2rem; }
+    .geo-col-bad  { background: rgba(200,90,42,0.06); border: 1px solid rgba(200,90,42,0.2); }
+    .geo-col-good { background: rgba(90,122,90,0.07); border: 1px solid rgba(90,122,90,0.25); }
+    .geo-col-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 0.5rem; }
+    .geo-col-bad  .geo-col-label { color: var(--accent); }
+    .geo-col-good .geo-col-label { color: #3d5c3d; }
+    .geo-col p { font-size: 0.86rem; color: var(--ink-mid); line-height: 1.75; margin: 0; }
+    @media (max-width: 540px) { .geo-compare { grid-template-columns: 1fr; } }
 
     .article-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
 
@@ -214,6 +227,7 @@
       <li><a href="#b2b-abilities">B2B 企業需要的 SEO 顧問，應具備這 5 種能力</a></li>
       <li><a href="#b2c-mistakes">用 B2C 思維操作 B2B SEO，會出現什麼問題？</a></li>
       <li><a href="#questions">選 SEO 顧問前，用這 5 個問題快速檢核</a></li>
+      <li><a href="#geo-observation">延伸觀察：AI 摘要時代，B2B 的 SEO 護城河反而更深了</a></li>
     </ol>
   </div>
 
@@ -347,6 +361,31 @@
     </div>
 
     <hr class="article-divider" />
+
+    <!-- 五：新增觀察段落 -->
+    <h2 id="geo-observation">延伸觀察：AI 摘要時代，B2B 的 SEO 護城河反而更深了</h2>
+
+    <p>過去 B2B 的 SEO 存在感明顯低於 B2C——搜尋量低、受眾窄，很難用流量數字說服老闆投資。但 AI 摘要（AI Overview / GEO）普及之後，這個局面悄悄翻轉了。</p>
+
+    <p>問題的關鍵在於：<strong>AI 最容易替代的，是那些「150 字就能說清楚」的內容。</strong>旅遊攻略、食譜教學、簡單的產品比較——這些 B2C 的通用型內容，使用者看完摘要就走，根本不需要點進網站。</p>
+
+    <div class="geo-compare">
+      <div class="geo-col geo-col-bad">
+        <p class="geo-col-label">⚠ 容易被 AI 摘要取代</p>
+        <p>B2C 通用型內容——旅遊攻略、食譜、基礎知識型文章。問題簡單，摘要 150 字就能解決，使用者不需要點進網站。</p>
+      </div>
+      <div class="geo-col geo-col-good">
+        <p class="geo-col-label">✓ AI 摘要難以完全替代</p>
+        <p>B2B 產業知識型內容——選型評估、導入框架、法規合規細節。問題複雜，需要深度閱讀才能真正理解與應用。</p>
+      </div>
+    </div>
+
+    <p>B2B 的採購決策者需要的不是「概念理解」，而是足夠深入的專業內容，用來支撐對老闆的簡報、對供應商的談判、對技術團隊的評估報告。工廠自動化的導入評估、ERP 選型的決策框架、跨國供應鏈的合規細節——這些問題的複雜度，幾段摘要根本消化不完。</p>
+
+    <div class="callout callout-observation">
+      <span class="obs-label">個人觀察</span>
+      <p>在這個維度上，B2B 的 SEO 邏輯其實和 YMYL（Your Money or Your Life）類別有幾分相似：內容的<strong>深度與可信度</strong>，比覆蓋廣度更重要，AI 摘要很難完全替代，讀者反而更有動機點入、停留、甚至填表詢價。這代表 B2B 的 SEO 含金量，在 AI 搜尋時代不是下降了，而是相對提升了——只要你做的是真正有深度的產業內容，而非湊字數的 SEO 文章。</p>
+    </div>
 
     <p>如果你的企業是 B2B，在找 SEO 顧問之前，建議先把這篇文章的五個問題整理好，帶去第一次洽談。對方的回答方式，往往比他的報價更能說明他適不適合你。</p>
 
