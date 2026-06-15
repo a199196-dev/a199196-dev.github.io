@@ -10,7 +10,20 @@
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NHMLJPRX');</script>
 
-  <!-- Article Schema -->
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"SEO 顧問通常合作多久才有成效？","acceptedAnswer":{"@type":"Answer","text":"一般來說，3 個月開始看到排名移動，6 個月才有穩定的自然流量成長。具體時間取決於產業競爭程度、網站現有基礎，以及內部執行速度。"}},
+      {"@type":"Question","name":"一次性的 SEO 健檢有沒有意義？","acceptedAnswer":{"@type":"Answer","text":"有意義。一次完整的 SEO 健檢能幫你找出技術問題、釐清關鍵字方向，讓你的內部團隊有明確的執行清單。"}},
+      {"@type":"Question","name":"顧問費可以開發票或計入行銷費用嗎？","acceptedAnswer":{"@type":"Answer","text":"可以。SEO 顧問服務屬於行銷顧問性質，費用通常可以開立統一發票，並計入公司的行銷或廣告費用。"}},
+      {"@type":"Question","name":"SEO 顧問跟 SEO 老師有什麼不同？","acceptedAnswer":{"@type":"Answer","text":"SEO 老師的目標是教你懂 SEO；SEO 顧問的目標是幫你的網站有成效，直接針對你的網站提供客製化策略和陪跑。"}},
+      {"@type":"Question","name":"SEO 顧問跟 SEO 公司哪個比較好？","acceptedAnswer":{"@type":"Answer","text":"有內部行銷人員、需要策略方向找顧問；完全沒有行銷人力、需要全包找代操公司；預算有限、想先了解問題找顧問做一次性健檢。"}}
+    ]
+  }
+  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -140,6 +153,31 @@
 
     .article-divider { border: none; border-top: 1px solid var(--border); margin: 3rem 0; }
 
+    /* DELIVERABLE CARDS */
+    .deliverable-list { display: flex; flex-direction: column; gap: 0.75rem; margin: 1.5rem 0; }
+    .deliverable-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.4rem; display: flex; gap: 1rem; align-items: flex-start; }
+    .deliverable-icon { font-size: 1.2rem; flex-shrink: 0; margin-top: 0.1rem; }
+    .deliverable-content h4 { font-family: var(--serif); font-weight: 700; font-size: 0.95rem; color: var(--ink); margin-bottom: 0.3rem; }
+    .deliverable-content p { font-size: 0.85rem; color: var(--ink-mid); line-height: 1.7; margin: 0; }
+    .deliverable-tag { display: inline-block; background: var(--accent-pale); color: var(--accent); font-size: 0.72rem; font-weight: 600; padding: 0.15rem 0.55rem; border-radius: 4px; margin-top: 0.4rem; }
+
+    /* RED FLAGS */
+    .red-flags { list-style: none; margin: 1rem 0 1.5rem; }
+    .red-flags li { display: flex; align-items: flex-start; gap: 0.75rem; padding: 0.65rem 0; border-bottom: 1px solid var(--border); font-size: 0.92rem; color: var(--ink-mid); }
+    .red-flags li:last-child { border-bottom: none; }
+    .red-flags li::before { content: '🚩'; flex-shrink: 0; margin-top: 0.05rem; }
+
+    /* FAQ */
+    .faq-list { margin: 1.5rem 0; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 0.75rem; overflow: hidden; background: var(--white); }
+    .faq-q { width: 100%; background: none; border: none; padding: 1.1rem 1.4rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; cursor: pointer; text-align: left; }
+    .faq-q-text { font-family: var(--serif); font-weight: 600; font-size: 0.97rem; color: var(--ink); line-height: 1.5; }
+    .faq-icon { width: 26px; height: 26px; border-radius: 50%; background: var(--paper-dark); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; color: var(--ink-mid); transition: all 0.3s; }
+    .faq-item.open .faq-icon { background: var(--accent); color: var(--white); transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.35s ease; }
+    .faq-a-inner { padding: 0 1.4rem 1.2rem; font-size: 0.92rem; color: var(--ink-mid); line-height: 1.85; }
+    .faq-item.open .faq-a { max-height: 400px; }
+
     .author-box { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 1.5rem; display: flex; gap: 1.25rem; align-items: flex-start; margin: 3rem 0; }
     .author-avatar { width: 60px; height: 60px; border-radius: 50%; object-fit: cover; flex-shrink: 0; border: 2px solid var(--accent-pale); }
     .author-name { font-family: var(--serif); font-weight: 700; font-size: 1rem; margin-bottom: 0.25rem; }
@@ -221,9 +259,11 @@
       <li><a href="#what-can-do">SEO 顧問可以幫你做到哪些事？</a></li>
       <li><a href="#flow">SEO 顧問的合作流程有哪些？</a></li>
       <li><a href="#vs-company">你需要 SEO 顧問，還是 SEO 公司？</a></li>
-      <li><a href="#pricing">SEO 公司與 SEO 顧問的收費標準</a></li>
+      <li><a href="#vs-inhouse">SEO 顧問 vs. 內部 SEO 人員，該怎麼選？</a></li>
+      <li><a href="#pricing">SEO 顧問費用完整解析</a></li>
       <li><a href="#diy">自己學做 SEO 要多久？該找顧問幫忙嗎？</a></li>
       <li><a href="#how-to-judge">該如何判斷 SEO 顧問的專業度？</a></li>
+      <li><a href="#faq">常見問題 FAQ</a></li>
     </ol>
   </div>
 
@@ -234,15 +274,50 @@
 
     <p>SEO 顧問的核心工作是幫你「把方向搞對」，而不是幫你「做」SEO。執行端通常還是要靠你的內部團隊，顧問的角色更像是一個有豐富實戰經驗的外部智囊，幫你判斷什麼該做、什麼先不用做、什麼方向是錯的。</p>
 
-    <p>具體來說，SEO 顧問通常能幫你做到以下幾件事：</p>
+    <p>具體來說，SEO 顧問通常能幫你做到以下幾件事，每項工作都有對應的具體交付物：</p>
 
-    <ul class="checklist">
-      <li><strong>關鍵字策略規劃</strong>——分析你的產業競爭、找出值得優先進攻的關鍵字方向，讓你的內容產出有明確目標，而不是靠感覺寫。</li>
-      <li><strong>技術性 SEO 健診</strong>——檢查網站速度、爬蟲可讀性、索引狀態、內部連結、結構化資料等技術問題，這些問題如果沒解決，內容做再好也很難排名。</li>
-      <li><strong>內容行銷規劃</strong>——根據關鍵字策略規劃文章主題和大綱，部分顧問也提供撰寫服務，確保每篇文章都有明確的搜尋意圖對應。</li>
-      <li><strong>數據追蹤與成效報告</strong>——每月分析關鍵字排名、自然流量、轉換變化，提出下一步優化方向，讓你知道錢花在哪裡、成效如何。</li>
-      <li><strong>競品分析</strong>——研究同產業的競爭對手在做什麼、排到什麼位置，幫你找到可以切入的內容缺口。</li>
-    </ul>
+    <div class="deliverable-list">
+      <div class="deliverable-item">
+        <div class="deliverable-icon">🔧</div>
+        <div class="deliverable-content">
+          <h4>技術性 SEO 健診</h4>
+          <p>檢查網站速度、爬蟲可讀性、索引狀態、內部連結、結構化資料等技術問題。技術基礎不穩，內容做再好也難排名。</p>
+          <span class="deliverable-tag">交付物：技術問題清單、GSC 爬蟲錯誤報告、優先修正建議</span>
+        </div>
+      </div>
+      <div class="deliverable-item">
+        <div class="deliverable-icon">🗺️</div>
+        <div class="deliverable-content">
+          <h4>關鍵字策略規劃</h4>
+          <p>分析你的產業競爭、找出值得優先進攻的關鍵字方向，讓你的內容產出有明確目標，而不是靠感覺寫。</p>
+          <span class="deliverable-tag">交付物：關鍵字架構圖、主題群集規劃、競爭難易度評估表</span>
+        </div>
+      </div>
+      <div class="deliverable-item">
+        <div class="deliverable-icon">✍️</div>
+        <div class="deliverable-content">
+          <h4>內容行銷規劃</h4>
+          <p>根據關鍵字策略規劃文章主題和大綱，確保每篇文章都有明確的搜尋意圖對應。部分顧問也提供撰寫服務。</p>
+          <span class="deliverable-tag">交付物：內容行事曆、文章大綱、SEO 寫作建議</span>
+        </div>
+      </div>
+      <div class="deliverable-item">
+        <div class="deliverable-icon">📊</div>
+        <div class="deliverable-content">
+          <h4>數據追蹤與成效報告</h4>
+          <p>每月分析關鍵字排名、自然流量、轉換變化，提出下一步優化方向，讓你知道錢花在哪裡、成效如何。</p>
+          <span class="deliverable-tag">交付物：每月 GSC 曝光／點擊報告、排名追蹤表、下階段策略建議</span>
+        </div>
+      </div>
+      <div class="deliverable-item">
+        <div class="deliverable-icon">🔍</div>
+        <div class="deliverable-content">
+          <h4>競品分析</h4>
+          <p>研究同產業競爭對手在做什麼、排到什麼位置，幫你找到可以切入的內容缺口和差異化機會。</p>
+          <span class="deliverable-tag">交付物：競品 SEO 現況分析、內容缺口報告</span>
+        </div>
+      </div>
+    </div>
 
     <div class="callout callout-insight">
       <p class="callout-title">💡 一個很重要的觀念</p>
@@ -306,6 +381,15 @@
       <p>顧問合作不是「付完錢等結果」，而是<strong>雙向協作</strong>。顧問給策略和方向，你的團隊負責執行。配合速度越慢，成效就越晚出現，這是很多企業低估的部分。</p>
     </div>
 
+    <h3>合作前你需要準備什麼？</h3>
+    <p>在第一次洽談之前，先把以下幾件事準備好，能讓顧問更快進入狀況，也能讓你更精準評估對方是否真的了解你的業務：</p>
+    <ul class="checklist">
+      <li><strong>業務目標</strong>——你希望 SEO 帶來什麼？詢價、電商訂單、品牌曝光？目標不同，策略方向就不同。</li>
+      <li><strong>GA4 和 GSC 的閱覽權限</strong>——讓顧問能直接看你的流量現況和收錄狀態，而不是聽你描述。</li>
+      <li><strong>競品清單</strong>——你認為誰是你的主要競爭對手？這能幫顧問快速找到差距和切入點。</li>
+      <li><strong>過去做過什麼</strong>——曾經找人做過 SEO 嗎？有沒有購買過外部連結？這些歷史會影響現在的策略。</li>
+    </ul>
+
     <!-- 三 -->
     <h2 id="vs-company">你需要 SEO 顧問，還是 SEO 公司？</h2>
 
@@ -331,10 +415,38 @@
     <p>如果評估後覺得現階段需要的是代操公司，建議多詢問幾間比較，每家的收費模式和服務範圍差異很大，不要只看報價高低。</p>
 
     <!-- 四 -->
-    <h2 id="pricing">SEO 公司與 SEO 顧問的收費標準</h2>
+    <h2 id="vs-inhouse">SEO 顧問 vs. 內部 SEO 人員，該怎麼選？</h2>
 
-    <p>台灣市場的 SEO 服務費用差異很大，從幾千元到幾萬元都有，差距來自於服務深度、顧問經驗、以及投入時間。以下是幾種常見的收費模式：</p>
+    <p>除了「顧問 vs 代操公司」，很多企業主還有另一個問題：<strong>我應該直接招一個 SEO 專員，還是找顧問就好？</strong>這兩個選項的成本結構和適用情況完全不同。</p>
 
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>項目</th><th>SEO 顧問</th><th>內部 SEO 人員</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>費用結構</td><td>月費，彈性控制，可隨時調整</td><td>薪資＋工具費，固定支出</td></tr>
+          <tr><td>知識廣度</td><td>跨產業視角，見過各種問題</td><td>容易只熟悉自家產業狀況</td></tr>
+          <tr><td>執行速度</td><td>依賴內部團隊配合</td><td>可全職投入，執行更快</td></tr>
+          <tr><td>知識留存</td><td>人離開策略還在</td><td>人員離職，經驗帶走</td></tr>
+          <tr><td>適合對象</td><td>預算有限、短期需要明確方向</td><td>有長期 SEO 需求、規模夠大的公司</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>簡單來說：如果你的公司 SEO 預算還沒到可以養一個全職人員的規模，或是你只是需要有人幫你把策略方向定清楚，找顧問是更務實的選擇。等到業務規模大到需要全職執行，再考慮招募內部人員——甚至可以讓顧問協助面試，確保招來的人有一定水準。</p>
+
+    <div class="callout callout-insight">
+      <p class="callout-title">💡 兩者也可以並行</p>
+      <p>一個常見的成功模式是：<strong>顧問負責策略方向，內部人員負責執行</strong>。這樣既能確保方向正確，又能讓知識留存在公司內部，是很多成長期品牌的選擇。</p>
+    </div>
+
+    <!-- 五 -->
+    <h2 id="pricing">SEO 顧問費用完整解析</h2>
+
+    <p>台灣市場的 SEO 顧問費用從每月 NT$8,000 到 NT$70,000 都有，差距讓很多人困惑。這一節把費用結構說清楚，幫你知道自己在為什麼付錢。</p>
+
+    <h3>三種常見收費模式</h3>
     <div class="table-wrap">
       <table>
         <thead>
@@ -346,6 +458,23 @@
           <tr><td>績效計費</td><td>關鍵字排名到達首頁才收費</td><td>每組關鍵字 NT$500～2,000／月</td><td>排名不等於業務成效，要謹慎</td></tr>
         </tbody>
       </table>
+    </div>
+
+    <h3>為什麼有人月付 NT$8,000，有人月付 NT$60,000？</h3>
+    <p>費用差距這麼大，背後的差異主要來自這幾個因素：</p>
+    <ul class="checklist">
+      <li><strong>服務頻率與投入時間</strong>——月費 NT$8,000 的顧問，每個月可能只花 4～6 小時在你的案子上；NT$40,000 以上的方案，通常包含週會、即時回覆、深度報告，投入時間可能超過 20 小時。</li>
+      <li><strong>顧問資歷與跨產業經驗</strong>——做了 10 年、服務過 50 個客戶的顧問，和剛入行 2 年的顧問，定價自然不同。資歷越深，踩坑機率越低，帶來的策略價值也越高。</li>
+      <li><strong>有無包含內容代寫</strong>——如果顧問的服務包含每月固定篇數的 SEO 文章撰寫，費用會顯著提高。純策略顧問和「策略＋代寫」的方案，成本差距可能達到 2 倍。</li>
+      <li><strong>交付物深度</strong>——簡單的排名追蹤表 vs. 完整的數據分析報告附行動建議，工時投入差很多，定價也反映這個差距。</li>
+    </ul>
+
+    <h3>報價太低要注意什麼？</h3>
+    <div class="callout callout-warning">
+      <p class="callout-title">⚠️ 低價 SEO 服務的常見風險</p>
+      <p><strong>黑帽手法風險</strong>——部分低價服務靠購買外部連結、農場文章衝排名，短期有效但長期可能被 Google 降權，後果由你承擔。<br/><br/>
+      <strong>固定 SOP 套餐</strong>——沒有針對你的業務客製化，所有客戶走一樣的流程，策略無法真正貼合你的需求。<br/><br/>
+      <strong>外包品質不穩</strong>——部分顧問接案後再外包給其他人執行，你付的錢和實際執行你案子的人的能力可能落差很大。</p>
     </div>
 
     <h3>成效型合作，至少要給 6 個月</h3>
@@ -385,6 +514,14 @@
 
     <p>但自學有幾個現實問題：學習過程中很容易走錯方向、網路上的資訊品質參差不齊、而且在不確定方向是否正確的情況下，執行了幾個月才發現白做的情況很常見。</p>
 
+    <h3>自學 SEO 最常踩的坑</h3>
+    <ul class="checklist">
+      <li><strong>學到過時資訊</strong>——SEO 演算法每年都在更新，2020 年以前的教學很多已經不適用，甚至會帶你走反方向。</li>
+      <li><strong>不知道優先順序</strong>——技術、內容、連結，到底先做哪個？方向沒有人給，容易把時間花在效益最低的地方。</li>
+      <li><strong>執行三個月才發現方向錯了</strong>——這是最常見也最心痛的情況，白花了時間，還要重來。</li>
+      <li><strong>誤信「速成技巧」</strong>——網路上很多保證快速排名的方法，實際上是短期有效、長期被懲罰的黑帽手法。</li>
+    </ul>
+
     <div class="callout callout-insight">
       <p class="callout-title">💡 什麼時候找顧問最划算？</p>
       <p>當你的團隊已經有基本的 SEO 概念，但不確定策略方向是否正確、或是想在既有基礎上加速——這時找顧問的 CP 值最高。<strong>顧問的核心價值不是幫你從零學 SEO，而是幫你少走三到六個月的冤枉路。</strong></p>
@@ -418,9 +555,65 @@
       </div>
     </div>
 
-    <hr class="article-divider" />
+    <h3>紅旗清單：遇到這幾種情況就要小心</h3>
+    <p>除了評估對方的優點，也要學會識別危險訊號：</p>
+    <ul class="red-flags">
+      <li>還沒看過你的網站就開始報方案——代表他賣的是固定套餐，不是為你量身設計的策略。</li>
+      <li>保證關鍵字排名第一頁——Google 的演算法沒有人能控制，這種保證要嘛是謊言，要嘛準備用高風險手法。</li>
+      <li>成效報告只有排名，沒有流量和轉換數據——排名提升不等於業務成長，一份只看排名的報告沒有意義。</li>
+      <li>合約綁 12～24 個月——合理的長期合作是雙方建立信任後自然延續，而不是從一開始就強迫綁約。</li>
+      <li>報價異常低但服務範圍很廣——天下沒有白吃的午餐，背後可能是外包執行或黑帽手法。</li>
+    </ul>
 
     <p>找 SEO 顧問這件事，說複雜也不複雜。把自己的需求想清楚、把對方的能力驗證清楚，大部分的雷都可以避開。希望這篇文章能讓你在第一次對話之前，就帶著正確的問題去問對方。</p>
+
+    <!-- FAQ -->
+    <h2 id="faq">SEO 顧問常見問題 FAQ</h2>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">SEO 顧問通常合作多久才有成效？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">一般來說，3 個月開始看到排名移動，6 個月才有穩定的自然流量成長。具體時間取決於產業競爭程度、網站現有基礎，以及內部執行速度。新網站或高競爭產業通常需要更長時間，6～12 個月才能看到明顯成效。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">一次性的 SEO 健檢有沒有意義？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">有意義，而且對很多企業來說是很好的起點。一次完整的 SEO 健檢能幫你找出技術問題、釐清關鍵字方向，讓你的內部團隊有明確的執行清單。如果你不確定是否要長期合作，先做一次專案制的健檢，是低風險又務實的做法。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">顧問費可以開發票或計入行銷費用嗎？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">可以。SEO 顧問服務屬於行銷顧問性質，費用通常可以開立統一發票，並計入公司的行銷或廣告費用。建議在合作前確認對方的開票方式（個人工作室 vs 公司行號），以利後續報帳。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">找顧問之前，我的網站需要先準備什麼？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">不需要等網站「準備好」才找顧問，但有幾件事能讓合作更順利：開通 GA4 和 GSC 並累積至少 3 個月的數據、整理一份競品清單、以及明確說出你希望 SEO 帶來的業務目標（詢價、訂單、品牌曝光）。這些資訊能讓顧問在第一次洽談時就給你更精準的建議。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">SEO 顧問跟 SEO 老師有什麼不同？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">SEO 老師的目標是「教你懂 SEO」，通常以課程、工作坊的形式提供知識；SEO 顧問的目標是「幫你的網站有成效」，直接針對你的網站提供客製化策略和陪跑。如果你想自己學，找老師；如果你想要結果，找顧問。</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-q-text">SEO 顧問跟 SEO 公司哪個比較好？</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a"><div class="faq-a-inner">沒有哪個「比較好」，適合你的才是好的。有內部行銷人員、需要策略方向 → 找顧問。完全沒有行銷人力、需要全包 → 找代操公司。預算有限、想先了解問題在哪 → 找顧問做一次性健檢。</div></div>
+      </div>
+    </div>
 
   </div>
 
@@ -458,6 +651,15 @@
   const btn = document.getElementById('hamburger');
   const menu = document.getElementById('mobile-menu');
   btn.addEventListener('click', () => menu.classList.toggle('open'));
+
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
 </script>
 
 </body>
