@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SEO 顧問報價怎麼看？收費方式、費用行情與合約陷阱完整指南｜Helen Chen</title>
-  <meta name="description" content="SEO 收費從幾千到幾十萬都有，差在哪裡？這篇整理 5 種 SEO 收費方式、費用行情、報價陷阱與合約眉角，幫你在找 SEO 顧問前把錢花在刀口上。" />
+  <meta name="description" content="台灣 SEO 費用行情整理：月費制 NT$20,000～80,000、績效型 NT$8,000～50,000+／組。本篇比較 5 種收費方式、合約陷阱與常見 FAQ，幫你在找 SEO 顧問前把錢花在刀口上。" />
   <link rel="canonical" href="https://a199196-dev.github.io/seo-pricing-guide.html" />
 
   <!-- Google Tag Manager -->
@@ -21,6 +21,55 @@
     "datePublished": "2026-06-16",
     "dateModified": "2026-06-16",
     "mainEntityOfPage": "https://a199196-dev.github.io/seo-pricing-guide.html"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "台灣 SEO 費用大概多少？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "台灣 SEO 月費制約 NT$20,000～80,000／月，績效型依關鍵字組數約 NT$8,000～50,000+／月，一次性專案約 NT$50,000～200,000+。費用差距主要來自顧問資歷、每月投入時間與服務內容的深度。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SEO 要做多久才有效果？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "新網站或競爭較激烈的產業，通常需要 6～12 個月才能看到明顯的自然流量成長。既有網站進行技術優化後，通常 3～6 個月可以觀察到排名變化。SEO 是長期投資，不是短期廣告。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SEO 一定要簽年約嗎？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "不一定。合理的綁約期是 3～6 個月，讓 SEO 策略有時間發揮效果。若廠商要求簽 12～24 個月且解約需支付大量違約金，建議謹慎評估。選擇提前告知期 30～60 天、合約透明的合作方式較有保障。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "SEO 顧問和 SEO 公司有什麼差別？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SEO 顧問通常是個人或小型團隊，直接由資深顧問操刀，溝通效率高但承接量有限。SEO 公司規模較大、服務較標準化，適合需要系統化執行的品牌。選擇關鍵是確認「實際執行你案子的人是誰」，避免接案後再外包。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "什麼是績效型 SEO 收費？有沒有風險？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "績效型是指排名達到指定位置才收費，聽起來風險低，但廠商可能選擇搜尋量低、競爭少的關鍵字來確保達標，排上去卻帶不來真正的流量。建議先用 Google Search Console 或 Ahrefs 確認關鍵字的實際搜尋量，再決定是否採用此方案。"
+        }
+      }
+    ]
   }
   </script>
 
@@ -162,6 +211,28 @@
     footer a { color: #8a7a6e; text-decoration: none; }
     footer a:hover { color: var(--accent); }
 
+    /* PRICE SUMMARY CARDS */
+    .price-overview { background: var(--accent-pale); border: 1px solid #d9b8a6; border-radius: var(--radius); padding: 1.5rem 1.75rem; margin: 1.75rem 0; }
+    .price-overview-title { font-family: var(--serif); font-size: 0.85rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 1rem; }
+    .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+    .price-item { background: var(--white); border-radius: 8px; padding: 1rem 1.1rem; border: 1px solid var(--border); }
+    .price-item-label { font-size: 0.75rem; color: var(--ink-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.3rem; }
+    .price-item-label .badge { display: inline-block; background: var(--accent); color: var(--white); font-size: 0.65rem; padding: 1px 6px; border-radius: 3px; margin-left: 5px; text-transform: none; letter-spacing: 0; vertical-align: middle; }
+    .price-item-label .badge-muted { background: var(--paper-dark); color: var(--ink-light); }
+    .price-item-amount { font-family: var(--serif); font-size: 0.95rem; font-weight: 700; color: var(--accent); line-height: 1.4; }
+    .price-item-desc { font-size: 0.78rem; color: var(--ink-light); margin-top: 0.25rem; }
+    .price-note { font-size: 0.78rem; color: var(--ink-light); margin-top: 0.85rem; padding-top: 0.75rem; border-top: 1px solid var(--border); }
+
+    /* WHICH PLAN TABLE */
+    .which-plan-table td:first-child { white-space: normal; }
+
+    /* FAQ */
+    .faq-list { margin: 1.25rem 0; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius); margin-bottom: 0.75rem; overflow: hidden; }
+    .faq-q { font-family: var(--serif); font-size: 0.95rem; font-weight: 600; color: var(--ink); padding: 1rem 1.25rem; background: var(--white); display: flex; align-items: flex-start; gap: 0.6rem; }
+    .faq-q::before { content: 'Q'; background: var(--accent); color: var(--white); font-size: 0.72rem; font-weight: 700; width: 20px; height: 20px; border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px; }
+    .faq-a { font-size: 0.9rem; color: var(--ink-mid); padding: 0 1.25rem 1rem 3rem; line-height: 1.85; background: var(--white); }
+
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .hamburger { display: flex; }
@@ -169,6 +240,10 @@
       .author-box { flex-direction: column; }
       .cta-box { padding: 2rem 1.5rem; }
       .pricing-meta { flex-direction: column; gap: 0.5rem; }
+      .price-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 480px) {
+      .price-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -207,27 +282,61 @@
 
   <div class="article-meta">
     <span class="meta-tag">SEO 顧問</span>
-    <span class="meta-info">2026.06.16 ・ 閱讀時間約 10 分鐘</span>
+    <span class="meta-info">2026.06.16 ・ 閱讀時間約 12 分鐘</span>
   </div>
 
   <h1 class="article-title">SEO 顧問報價怎麼看？收費方式、費用行情與合約陷阱完整指南</h1>
 
-  <p class="article-lead">市面上的 SEO 價錢和收費方式很多種，本篇文章介紹常見的幾種合作方式，希望你看完能找到最適合自己的合作方案。</p>
+  <p class="article-lead">市面上 SEO 報價從幾千到幾十萬都有，差在哪裡？這篇整理台灣 SEO 費用行情、5 種主流收費方式、合約陷阱與常見問題，幫你在找 SEO 顧問前先搞清楚錢該怎麼花。</p>
 
   <div class="toc">
     <p class="toc-title">📋 文章目錄</p>
     <ol>
+      <li><a href="#price-overview">台灣 SEO 費用行情一覽</a></li>
       <li><a href="#pricing-models">SEO 顧問有哪幾種收費方式？</a></li>
       <li><a href="#which-plan">怎麼判斷哪種 SEO 方案適合我的企業？</a></li>
       <li><a href="#performance-trap">績效型收費聽起來吸引人，為什麼要謹慎？</a></li>
       <li><a href="#price-gap">同樣是月費制，為什麼價差可以到 10 倍？</a></li>
       <li><a href="#low-price-risk">報價太低要注意什麼？</a></li>
       <li><a href="#contract">合約裡一定要確認的事</a></li>
+      <li><a href="#faq">常見問題 FAQ</a></li>
       <li><a href="#my-position">Helen 的 SEO 服務特色</a></li>
     </ol>
   </div>
 
   <div class="article-body">
+
+    <!-- 費用行情總覽 -->
+    <h2 id="price-overview">台灣 SEO 費用行情一覽</h2>
+
+    <p>不管你是第一次找 SEO 顧問，還是想換廠商重新評估，先建立費用概念再看細節，比較不容易被報價牽著走。</p>
+
+    <div class="price-overview">
+      <div class="price-overview-title">💰 台灣 SEO 費用快速參考</div>
+      <div class="price-grid">
+        <div class="price-item">
+          <div class="price-item-label">月費制 <span class="badge">最常見</span></div>
+          <div class="price-item-amount">NT$20,000－80,000／月</div>
+          <div class="price-item-desc">持續優化、關鍵字策略、每月報告</div>
+        </div>
+        <div class="price-item">
+          <div class="price-item-label">績效型 <span class="badge badge-muted">需謹慎</span></div>
+          <div class="price-item-amount">NT$8,000－50,000+／組</div>
+          <div class="price-item-desc">排名達標後計費，依關鍵字組數</div>
+        </div>
+        <div class="price-item">
+          <div class="price-item-label">顧問諮詢</div>
+          <div class="price-item-amount">NT$1,000－8,000+／小時</div>
+          <div class="price-item-desc">策略建議方向，不含執行</div>
+        </div>
+        <div class="price-item">
+          <div class="price-item-label">一次性專案</div>
+          <div class="price-item-amount">NT$50,000－200,000+</div>
+          <div class="price-item-desc">技術健診、網站搬家、關鍵字研究</div>
+        </div>
+      </div>
+      <div class="price-note">以上為市場參考區間，實際報價依產業競爭度、網站規模與服務內容而異。以下各節逐一說明每種模式的邏輯與適用情境。</div>
+    </div>
 
     <!-- 一 -->
     <h2 id="pricing-models">SEO 顧問有哪幾種 SEO 收費方式？</h2>
@@ -368,6 +477,21 @@
 
     <p>簡單說，如果你的首要目標是「讓特定幾個關鍵字排上去」，績效型方案比較符合你的期待；如果你的目標是「讓網站整體自然流量成長、建立長期搜尋競爭力」，顧問型的月費制或專案制會更適合你。</p>
 
+    <div class="table-wrap which-plan-table">
+      <table>
+        <thead>
+          <tr><th>你的情況</th><th>建議方案</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>想長期穩定累積 SEO 成效</td><td>固定月費制</td></tr>
+          <tr><td>預算有限，想先用少數關鍵字試水溫</td><td>績效計費（需仔細評估關鍵字價值）</td></tr>
+          <tr><td>有內部行銷人員，只缺策略方向</td><td>顧問諮詢制</td></tr>
+          <tr><td>遇到單一技術問題或需要網站搬家</td><td>一次性專案制</td></tr>
+          <tr><td>電商／高轉換率網站，願意利潤分潤</td><td>流量計費制</td></tr>
+        </tbody>
+      </table>
+    </div>
+
     <!-- 績效型謹慎 -->
     <h2 id="performance-trap">績效型 SEO 收費聽起來吸引人，為什麼要謹慎？</h2>
 
@@ -375,7 +499,11 @@
 
     <div class="callout callout-insight">
       <p class="callout-title">💡 先做功課，再選詞</p>
-      <p>Google Search Console 和 Google Trends 是完全免費的入門工具，可以幫你掌握關鍵字的搜尋趨勢與流量規模。如果想要更完整的數據，Ahrefs、Semrush、Ubersuggest 都有提供免費版，查詢次數有限但足夠用來做初步評估。帶著這些資訊去跟 SEO 公司討論選詞，更容易判斷對方的建議是否真的對你的業務有意義。</p>
+      <ul style="list-style:none; margin:0; padding:0;">
+        <li style="display:flex; gap:0.6rem; align-items:flex-start; margin-bottom:0.6rem; font-size:0.93rem; color:var(--ink-mid); line-height:1.75;"><span style="color:var(--accent); font-weight:700; flex-shrink:0;">→</span><span><strong>Google Search Console、Google Trends</strong>——完全免費，掌握關鍵字搜尋趨勢與流量規模，是最基本的入門工具。</span></li>
+        <li style="display:flex; gap:0.6rem; align-items:flex-start; margin-bottom:0.6rem; font-size:0.93rem; color:var(--ink-mid); line-height:1.75;"><span style="color:var(--accent); font-weight:700; flex-shrink:0;">→</span><span><strong>Ahrefs、Semrush、Ubersuggest</strong>——有免費版，查詢次數有限但足夠初步評估競爭程度與月搜尋量。</span></li>
+        <li style="display:flex; gap:0.6rem; align-items:flex-start; font-size:0.93rem; color:var(--ink-mid); line-height:1.75;"><span style="color:var(--accent); font-weight:700; flex-shrink:0;">→</span><span>帶著這些數據去跟 SEO 公司討論選詞，更容易判斷對方建議的關鍵字是否真的對你的業務有意義。</span></li>
+      </ul>
     </div>
 
     <!-- 二 -->
@@ -441,6 +569,40 @@
       <li><strong>解約條款要看清楚</strong>——合理的提前告知期是 30～60 天。如果對方要求綁約 12～24 個月才能解除，或是解約要支付大量違約金，要特別謹慎。</li>
       <li><strong>任何「排名保證」都要打問號</strong>——Google 演算法不是任何人能控制的。承諾特定關鍵字排進首頁的顧問，要嘛是在說謊，要嘛是準備用你不知道的方式達成。</li>
     </ul>
+
+    <!-- FAQ -->
+    <h2 id="faq">常見問題 FAQ</h2>
+
+    <p>以下整理找 SEO 顧問前最常被問到的問題，如果你心裡有一樣的疑問，直接看這裡。</p>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <div class="faq-q">台灣 SEO 費用大概多少？</div>
+        <div class="faq-a">月費制約 NT$20,000～80,000／月，績效型依關鍵字組數約 NT$8,000～50,000+／月，一次性專案約 NT$50,000～200,000+。費用差距主要來自顧問資歷、每月投入時間與服務內容深度，不是單純的品牌溢價。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">SEO 要做多久才有效果？</div>
+        <div class="faq-a">新網站或競爭較激烈的產業，通常需要 6～12 個月才能看到明顯的自然流量成長。既有網站進行技術優化後，通常 3～6 個月可以觀察到排名變化。SEO 是長期投資，不是短期廣告，急著看爆發性成效反而容易踩到黑帽陷阱。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">SEO 一定要簽年約嗎？</div>
+        <div class="faq-a">不一定。合理的綁約期是 3～6 個月，讓策略有時間發揮效果。若廠商要求簽 12～24 個月且解約需支付大量違約金，建議謹慎評估。選擇提前告知期 30～60 天、合約透明的合作方式，對雙方都公平。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">SEO 顧問和 SEO 公司有什麼差別？</div>
+        <div class="faq-a">SEO 顧問通常是個人或小型團隊，直接由資深顧問操刀，溝通效率高但承接量有限。SEO 公司規模較大、服務較標準化，適合需要系統化執行的品牌。選擇時最關鍵的問題是：「實際執行我案子的人是誰？」確認不是接案後再外包，才能確保品質穩定。</div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">什麼是績效型 SEO 收費？有沒有風險？</div>
+        <div class="faq-a">績效型是指排名達到指定位置才收費，聽起來風險低，但廠商可能選擇搜尋量低、競爭少的關鍵字來確保達標，排上去卻帶不來真正的流量。建議先用 Google Search Console 或 Ahrefs 確認目標關鍵字的實際月搜尋量，再決定是否採用此方案。</div>
+      </div>
+
+    </div>
 
     <!-- 七 -->
     <h2 id="my-position">Helen 的 SEO 服務特色</h2>
